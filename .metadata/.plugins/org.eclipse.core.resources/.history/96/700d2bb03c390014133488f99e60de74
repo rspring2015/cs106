@@ -1,0 +1,38 @@
+/**
+ * 
+ */
+
+/**
+ * @author rspring
+ *
+ */
+public class SwimCalculator {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			//declare variables
+			double distance;
+			//distance is in yards
+			double goaltime;
+			//goaltime is in seconds
+			double lengthsplit;
+			
+			//compute lengthsplit
+			distance = 200.;
+			goaltime = 120.;
+			lengthsplit = goaltime / (distance/25);
+			//1 length is 25 yards
+			
+			//print lengthsplit
+			System.out.println ("Goal time:" + distance);
+			System.out.println ("Goal Time Length Split");
+			System.out.println (lengthsplit + " seconds");
+		
+					
+			
+	}
+
+}

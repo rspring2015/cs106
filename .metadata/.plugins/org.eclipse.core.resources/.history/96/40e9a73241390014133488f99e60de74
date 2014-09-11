@@ -1,0 +1,66 @@
+/**
+ * 
+ */
+
+/**
+ * @author rspring
+ *
+ */
+public class SwimCalculator {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			
+		//declare variables
+			double distance;
+			double goaltime;
+			double lengthsplit;
+			
+			//compute length split for 200 yards
+			distance = 200.;
+			goaltime = 120.;
+			lengthsplit = goaltime / (distance/25);
+			//1 length is 25 yards
+			
+			//print lengthsplit for 200 yards
+			System.out.println("Swim Split Calculator");
+			System.out.println();
+			System.out.println("Distance:" + distance + " yards");
+			System.out.println ("Goal time:" +  goaltime + " seconds");
+			System.out.println ("Length Split:" + lengthsplit + " seconds");
+			System.out.println();
+			
+			//compute length split for 1650 yards at 1080 seconds
+			distance = 1650.;
+			goaltime = 1080.; 
+			lengthsplit = goaltime / (distance/25);
+			
+			//print lengthsplit for 1650 yards at 1080 seconds
+			System.out.println("Distance:" + distance + " yards");
+			System.out.println ("Goal time:" +  goaltime + " seconds");
+			System.out.println ("Length Split:" + lengthsplit + " seconds");
+			System.out.println();
+			
+			//compute length split for 1650 at 1050 seconds
+			distance = 1650.;
+			goaltime = 1050.;
+			lengthsplit = goaltime / (distance/25);
+			
+			//print lengthsplit for 1650 at 1050 seconds
+			System.out.println("Distance:" + distance + " yards");
+			System.out.println ("Goal time:" +  goaltime + " seconds");
+			System.out.println ("Length Split:" + lengthsplit + " seconds");
+			System.out.println();
+			
+			
+			
+					
+  
+					
+			
+	}
+
+}
