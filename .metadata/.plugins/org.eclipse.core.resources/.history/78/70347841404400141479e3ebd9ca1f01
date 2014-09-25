@@ -1,0 +1,77 @@
+import java.util.*;
+/**
+ * 
+ */
+
+/**
+ * @author rspring
+ *
+ */
+public class Project2Quiz {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner console = new Scanner(System.in);
+		System.out.println("Where Should You Study Abroad?");
+		int adventure=0; 
+		int food=0;
+		int fashion=0;
+		int nature=0;
+	
+	
+		
+		System.out.println("Question 1: Do you prefer to be outdoors or indoors?");
+		String answer1 = console.nextLine();
+		if (answer1.equals("outdoors")) {
+			adventure++;
+			nature++;
+		} else if (answer1.equals("indoors")) {
+			food++;
+			fashion++;
+		}
+		
+		System.out.println("Question 2: What would you like to learn?:");
+		System.out.println("A. How to surf");
+		System.out.println("B. How to cook");
+		System.out.println("C. Fashion design");
+		System.out.println("D. zoology");
+		String answer2= console.nextLine();
+		if (answer2.equals("A")){
+			adventure++;
+		} else if (answer2.equals("B")){
+			food++;
+		}else if (answer2.equals("C")){
+			fashion++;
+		}else if (answer2.equals("D")){
+			nature++;
+			
+			
+		}
+		System.out.println("Question 3: What sounds like a great Saturday afternoon?:");
+		System.out.println("A. Bungee Jumpin");
+		System.out.println("B. Wine Tasting");
+		System.out.println("C. Shopping");
+		System.out.println("D. Going on a hike");
+		String answer3= console.nextLine();
+		if (answer3.equals("A")){
+			adventure++;
+		} else if (answer3.equals("B")){
+			food++;
+		}else if (answer3.equals("C")){
+			fashion++;
+		}else if (answer3.equals("D")){
+			nature++;
+			
+		
+	}
+		
+		
+		
+		
+		
+}
+
+
