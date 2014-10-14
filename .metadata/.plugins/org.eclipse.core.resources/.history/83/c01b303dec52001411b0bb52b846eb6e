@@ -8,9 +8,6 @@ public class Project4ReadFiles {
 			double checking = 0;
 			double savings = 0;
 			double creditCard = 0;
-			
-			String action = fileReader.next();
-			String account= fileReader.next();
 		while (fileReader.hasNextLine()) {
 		
 		
@@ -18,20 +15,20 @@ public class Project4ReadFiles {
 			fileReader.next();
 			
 	
-			
+		
+			String account= fileReader.next();
 		//must skip "card" for credit card
 			if (account.equals("Credit")) {
 				fileReader.next();
-			
-			
-			if (action.equals("Opening")) {
+			String action = fileReader.next();
+				if (action.equals("Opening")) {
 					fileReader.next();
 					creditCard += fileReader.nextDouble();
 				}else if (action.equals("Withdrawal")) {
 					creditCard-= fileReader.nextDouble();
 				}else if (action.equals("Deposit")){
 				creditCard+= fileReader.nextDouble();
-				}
+				
 			//if not credit, then savings or checking
 			
 			  } else if (account.equals("Checking")){
@@ -40,35 +37,32 @@ public class Project4ReadFiles {
 					checking+= fileReader.nextDouble();
 				}else if (action.equals("Withdrawal")) {
 					checking-=fileReader.nextDouble();
-				} else if (action.equals("Deposit")){
+				} else if (action.equals("Deposit")) 
 				checking+= fileReader.nextDouble();
-				}
-			  
-		        }else if (account.equals("Savings")){
+				}else if (account.equals("Savings")){
+				
 				if (action.equals("Opening")) {
 					fileReader.next();
 					savings+= fileReader.nextDouble();
 				}else if (action.equals("Withdrawal")) {
 					savings-= fileReader.nextDouble();
-				} else if (action.equals("Deposit")){
+				} else if (action.equals("Deposit"))
 				savings+= fileReader.nextDouble();
 			}
 				
 
-			
-		
+			}
+		}
 		//print to file
 		fileReader.close();
-		        }
 	
 	PrintStream output = new PrintStream(new File("output.txt"));
 			output.println("Checking Balance: $" + checking);
 			output.println("Credit Card Balance: $" + creditCard);
 			output.println("Savings Balance: $" + savings);
 			output.close();
-		}
-	
 	}
+	
 }
 	
 

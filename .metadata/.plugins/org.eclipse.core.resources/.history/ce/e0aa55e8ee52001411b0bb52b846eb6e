@@ -59,12 +59,11 @@ public class Project4ReadFiles {
 		
 		//print to file
 		fileReader.close();
-		        }
 	
 	PrintStream output = new PrintStream(new File("output.txt"));
 			output.println("Checking Balance: $" + checking);
 			output.println("Credit Card Balance: $" + creditCard);
-			output.println("Savings Balance: $" + savings);
+			output.println("Savings Balance :$" + savings);
 			output.close();
 		}
 	

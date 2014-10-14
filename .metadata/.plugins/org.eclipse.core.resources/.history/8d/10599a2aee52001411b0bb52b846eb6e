@@ -40,9 +40,8 @@ public class Project4ReadFiles {
 					checking+= fileReader.nextDouble();
 				}else if (action.equals("Withdrawal")) {
 					checking-=fileReader.nextDouble();
-				} else if (action.equals("Deposit")){
+				} else if (action.equals("Deposit")) 
 				checking+= fileReader.nextDouble();
-				}
 			  
 		        }else if (account.equals("Savings")){
 				if (action.equals("Opening")) {
@@ -50,25 +49,23 @@ public class Project4ReadFiles {
 					savings+= fileReader.nextDouble();
 				}else if (action.equals("Withdrawal")) {
 					savings-= fileReader.nextDouble();
-				} else if (action.equals("Deposit")){
+				} else if (action.equals("Deposit"))
 				savings+= fileReader.nextDouble();
 			}
 				
 
-			
+			}
 		
 		//print to file
 		fileReader.close();
-		        }
 	
 	PrintStream output = new PrintStream(new File("output.txt"));
 			output.println("Checking Balance: $" + checking);
 			output.println("Credit Card Balance: $" + creditCard);
-			output.println("Savings Balance: $" + savings);
+			output.println("Savings Balance :$" + savings);
 			output.close();
-		}
-	
 	}
+	
 }
 	
 
