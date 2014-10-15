@@ -11,11 +11,11 @@ public class Project4ReadFiles {
 			
 			
 		while (fileReader.hasNext()) {
-			//skip date
-			fileReader.next();
+			
 			String account= fileReader.next();
 			
-		
+		//skip date
+			fileReader.next();
 			
 	
 			
