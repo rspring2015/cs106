@@ -22,6 +22,7 @@ public class Project4ReadFiles {
 		//must skip "card" for credit card
 			if (account.equals("Credit")) {
 				fileReader.next();
+				
 				String action= fileReader.next();	
 			if (action.equals("Opening")) {
 					fileReader.next();
@@ -34,7 +35,7 @@ public class Project4ReadFiles {
 			//if not credit, then savings or checking
 			
 			  } else if (account.equals("Checking")){
-				  
+				  String action= fileReader.next();
 				if (action.equals("Opening")) {
 					fileReader.next();
 					checking+= fileReader.nextDouble();
@@ -45,6 +46,7 @@ public class Project4ReadFiles {
 				}
 			  
 		        }else if (account.equals("Savings")){
+		        	String action= fileReader.next();
 				if (action.equals("Opening")) {
 					fileReader.next();
 					savings+= fileReader.nextDouble();

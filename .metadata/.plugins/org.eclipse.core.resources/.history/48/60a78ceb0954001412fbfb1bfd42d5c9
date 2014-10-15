@@ -9,11 +9,11 @@ public class Project4ReadFiles {
 			double savings = 0;
 			double creditCard = 0;
 			
-			
-		while (fileReader.hasNext()) {
-			
+			String action = fileReader.next();
 			String account= fileReader.next();
-			
+		while (fileReader.hasNextLine()) {
+		
+		
 		//skip date
 			fileReader.next();
 			
@@ -22,7 +22,8 @@ public class Project4ReadFiles {
 		//must skip "card" for credit card
 			if (account.equals("Credit")) {
 				fileReader.next();
-				String action= fileReader.next();	
+			
+			
 			if (action.equals("Opening")) {
 					fileReader.next();
 					creditCard += fileReader.nextDouble();
@@ -34,7 +35,6 @@ public class Project4ReadFiles {
 			//if not credit, then savings or checking
 			
 			  } else if (account.equals("Checking")){
-				  
 				if (action.equals("Opening")) {
 					fileReader.next();
 					checking+= fileReader.nextDouble();
@@ -58,9 +58,8 @@ public class Project4ReadFiles {
 			
 		
 		//print to file
-		
+		fileReader.close();
 		        }
-			fileReader.close();
 	
 	PrintStream output = new PrintStream(new File("output.txt"));
 			output.println("Checking Balance: $" + checking);
