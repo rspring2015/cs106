@@ -1,0 +1,12 @@
+
+public class SeasonTime {
+	String event;
+	double time;
+	
+	public SeasonTime (String event, double time){
+		this.event= event;
+		this.time= time;
+		
+
+	}
+}
