@@ -8,11 +8,6 @@ public class Average {
 	SeasonTime [] times;
 	
 	//load method to determine size of array, numlines function
-/**
- * 
- * @param filepath
- * @throws FileNotFoundException
- */
 public void load (String filepath) throws FileNotFoundException{
 	this.times= new SeasonTime[this.numlines(filepath)];
 	Scanner fileReader = new Scanner(new File(filepath));
