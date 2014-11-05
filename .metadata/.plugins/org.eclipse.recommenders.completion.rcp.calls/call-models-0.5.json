@@ -9,5 +9,10 @@
     "location": "/opt/jdk1.7.0_67/jre/lib/rt.jar",
     "status": "RESOLVED",
     "error": "No class path info available for \u0027/opt/jdk1.7.0_67/jre/lib/rt.jar\u0027. Skipped."
+  },
+  "/students/home/rspring/cs106/Project 5/src": {
+    "location": "/students/home/rspring/cs106/Project 5/src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027/students/home/rspring/cs106/Project 5/src\u0027. Skipped."
   }
 }
