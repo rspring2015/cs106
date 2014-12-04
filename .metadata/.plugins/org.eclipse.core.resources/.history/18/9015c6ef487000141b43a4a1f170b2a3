@@ -1,0 +1,16 @@
+
+public class recursion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Count(10);
+	}
+		public static void Count(int n){
+			if (n>1){
+				Count(n-1);
+		}
+		
+		System.out.println(n);
+	}
+
+}

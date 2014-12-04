@@ -1,0 +1,11 @@
+
+public class Average {
+	public double average (int[] array.length);
+	while (int i=0; i < array.length; i++); 
+
+	    sum = sum + data[i]; 
+	    double average = sum / array.length;; 
+
+	    System.out.println("Average time: " " + average + "seconds");
+	}
+}

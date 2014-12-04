@@ -1,0 +1,37 @@
+import java.util.*;
+import java.io.*;
+
+public class SwimMeet {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		System.out.println("Swim Meet Planner");
+		
+	
+		
+		//scanner to read file
+		Scanner fileReader = new Scanner(new File("src/Finalprojectinput.txt"));
+		
+		
+		//create results Map
+		HashMap <String,ArrayList<Integer>> results = new HashMap <String, ArrayList<Integer>>();
+		
+		//adding names and times to results Map
+		while (fileReader.hasNext()) {
+			String name = fileReader.next();
+			int time = fileReader.nextInt();
+			//does swimmer exist in map?
+			if (results.containsKey(name)){
+				results.get(name).add(time);
+				
+			} else {ArrayList<Integer> times= new ArrayList<Integer>();
+			times.add(time);
+			results.put(name,times);
+			}
+			
+		fileReader.close();
+			
+				
+		}
+	}
+	}

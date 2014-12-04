@@ -1,0 +1,42 @@
+import java.util.*;
+import java.io.*;
+
+public class SwimMeet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Swim Meet Planner");
+		
+		//create arrays for the 7 swimmers of length 10
+		int [] colleen = new int [10];
+		int [] rachel = new int [10];
+		int [] kate = new int [10];
+		int [] emily = new int [10];
+		int [] erin = new int [10];
+		int [] ellen = new int [10];
+		int [] sarah = new int [10];
+		
+		//add times to arrays
+		Scanner fileReader = new Scanner(new File("src/Final_Project_Data.txt"));
+		String name = fileReader.next();
+		
+		while (fileReader.hasNext()) {
+			if (name.equals("Colleen")) {
+				fileReader.next();
+				colleen[10] fileReader.nextDouble();
+		} else if (name.equals("Rachel")) {
+	            fileReader.next();
+		} else if (name.equals("Kate")) {
+            fileReader.next();
+		} else if (name.equals("Emily")) {
+	            fileReader.next();
+	    } else if (name.equals("Erin")) {
+            fileReader.next();	
+	    } else if (name.equals("Ellen")) {
+            fileReader.next();
+	    } else if (name.equals("Sarah")) {
+            fileReader.next();
+	    }
+		}
+	}
+	}

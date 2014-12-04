@@ -1,0 +1,18 @@
+
+public class progcomp1 {
+	public static void main(String[] args) {
+	System.out.println("\\"+" "+" "+" "+" "+"/"+"\\");
+	System.out.println(" "+")"+" "+" "+"("+" "+"'"+")");
+	System.out.println("("+" "+" "+"/"+" "+" "+")");
+	System.out.println(" "+"\\"+"("+"__"+")"+"|");
+	
+	
+	System.out.println("NFC"+" "+"West"+"       "+"W  "+"L  "+  "T");
+	System.out.println();
+	System.out.println("-----------------------");
+	System.out.println("Seattle"+" "+"13"+ " "+ "3" +"0");
+	System.out.println("San"+" "+ "Francisco" +" "+ "12" +" "+ "40");
+	System.out.println("Arizona"+ " "+ "10"+ "" + "6"+ " "+ "0");
+	System.out.println("St."+""+"Louis"+" "+"7" +" "+"9"+"0");
+	}	
+}

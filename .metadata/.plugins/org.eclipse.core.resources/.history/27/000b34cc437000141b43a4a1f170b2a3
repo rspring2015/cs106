@@ -1,0 +1,19 @@
+
+public class recursion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int value= 0; 
+		
+		public static void countUp (int value){
+		if (value < 11){
+			value ++;
+			System.out.println(value);
+		}else{
+			System.out.println();
+			
+		}
+		
+	}
+
+}

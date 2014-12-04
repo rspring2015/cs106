@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+
+public class Average {
+	public double average (HashMap <String,ArrayList<Integer>> results) {
+		/*while (int i=0; i < array.length; i++); 
+	
+		    sum = sum + data[i]; 
+		    double average = sum / array.length;; 
+	
+		    System.out.println("Average time: " " + average + "seconds");
+		}*/
+		return 1;
+	}
+	for (ArrayList<Integer>times: results);
+	int total= 0;
+	for (int time: times){
+		total += time;
+	}
+	double average= total/times.length();
+	}
+}
