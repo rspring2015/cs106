@@ -4,11 +4,6 @@ import java.util.Map.Entry;
 
 
 public class Average {
-	
-	/**
-	 * Finds the average time per person, each person's fastest time, and the fastest time on the team
-	 * @param results
-	 */
 	public void average (HashMap <String,ArrayList<Integer>> results) {
 		
 	
@@ -31,7 +26,7 @@ public class Average {
 					fastest = time;
 				}
 			}
-			System.out.println(entry.getKey() + "'s fastest time:  " + fastest+" seconds");
+			System.out.println(entry.getKey() + " fastest time " + fastest);
 		}
 			
 				
@@ -46,7 +41,7 @@ public class Average {
 				}
 			}
 		}
-		System.out.println("Fastest person: " + fastestPerson + " time of " + fastest+" seconds");
+		System.out.println("Fastest person: " + fastestPerson + " time of " + fastest);
 		
 	}
 }

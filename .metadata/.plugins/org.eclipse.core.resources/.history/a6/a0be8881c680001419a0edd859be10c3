@@ -31,7 +31,7 @@ public class Average {
 					fastest = time;
 				}
 			}
-			System.out.println(entry.getKey() + "'s fastest time:  " + fastest+" seconds");
+			System.out.println(entry.getKey() + "'s fastest time:  " + fastest+"seconds");
 		}
 			
 				
@@ -46,7 +46,7 @@ public class Average {
 				}
 			}
 		}
-		System.out.println("Fastest person: " + fastestPerson + " time of " + fastest+" seconds");
+		System.out.println("Fastest person: " + fastestPerson + " time of " + fastest);
 		
 	}
 }
